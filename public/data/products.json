@@ -1,0 +1,1613 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "HP Pavilion 15",
+      "marca": "HP",
+      "precio": 1299900,
+      "descuento": 15,
+      "precioFinal": 1104915,
+      "descripcion": "Laptop ideal para tareas de oficina con procesador Intel Core i5, 8GB RAM y 256GB SSD. Perfecta para productividad diaria.",
+      "categoria": "oficina",
+      "imagen": "/images/product-1.avif",
+      "especificaciones": {
+        "procesador": "Intel Core i5-1235U",
+        "ram": "8GB",
+        "almacenamiento": "256GB SSD",
+        "pantalla": "15.6 pulgadas Full HD"
+      },
+      "reseñas": {
+        "totalReseñas": 94,
+        "promedio": 4.1,
+        "distribucion": {
+          "5estrellas": 50,
+          "4estrellas": 25,
+          "3estrellas": 12,
+          "2estrellas": 5,
+          "1estrella": 2
+        },
+        "comentarios": [
+          {
+            "usuario": "Martina López",
+            "avatar": "https://i.pravatar.cc/150?img=5",
+            "estrellas": 5,
+            "comentario": "Muy buena para trabajar diario, cumple lo prometido y la batería aguanta bastante.",
+            "fecha": "2025-09-12",
+            "likes": 31,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Gonzalo Silva",
+            "avatar": "https://i.pravatar.cc/150?img=3",
+            "estrellas": 4,
+            "comentario": "Bien para oficina, pero me gustaría que la pantalla fuera un poco más brillante.",
+            "fecha": "2025-08-30",
+            "likes": 19,
+            "dislikes": 3
+          },
+          {
+            "usuario": "Valentina Cruz",
+            "avatar": "https://i.pravatar.cc/150?img=9",
+            "estrellas": 3,
+            "comentario": "Es funcional pero esperaba un poco más de rendimiento en algunas tareas.",
+            "fecha": "2025-07-22",
+            "likes": 12,
+            "dislikes": 4
+          },
+          {
+            "usuario": "Santiago Ruiz",
+            "avatar": "https://i.pravatar.cc/150?img=7",
+            "estrellas": 2,
+            "comentario": "Se calienta bastante con carga pesada, aunque para tareas ligeras sirve.",
+            "fecha": "2025-06-10",
+            "likes": 6,
+            "dislikes": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "nombre": "ASUS ROG Strix G15",
+      "marca": "ASUS",
+      "precio": 3299900,
+      "descripcion": "Laptop gamer de alta gama con RTX 4060, procesador AMD Ryzen 7 y pantalla de 165Hz. Domina cualquier juego.",
+      "categoria": "gamer",
+      "imagen": "/images/product-2.webp",
+      "especificaciones": {
+        "procesador": "AMD Ryzen 7 7735HS",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "15.6 pulgadas 165Hz",
+        "grafica": "NVIDIA RTX 4060"
+      },
+      "reseñas": {
+        "totalReseñas": 183,
+        "promedio": 4.5,
+        "distribucion": {
+          "5estrellas": 120,
+          "4estrellas": 40,
+          "3estrellas": 15,
+          "2estrellas": 6,
+          "1estrella": 2
+        },
+        "comentarios": [
+          {
+            "usuario": "Facundo Morales",
+            "avatar": "https://i.pravatar.cc/150?img=8",
+            "estrellas": 5,
+            "comentario": "La más fluida que tuve hasta ahora, corre todo lo que le tirás sin pestañear.",
+            "fecha": "2025-10-02",
+            "likes": 74,
+            "dislikes": 2
+          },
+          {
+            "usuario": "Camila Pérez",
+            "avatar": "https://i.pravatar.cc/150?img=10",
+            "estrellas": 5,
+            "comentario": "Excelente pantalla 165 Hz, se nota la diferencia en juegos competitivos.",
+            "fecha": "2025-09-25",
+            "likes": 59,
+            "dislikes": 3
+          },
+          {
+            "usuario": "Lucas Medina",
+            "avatar": "https://i.pravatar.cc/150?img=1",
+            "estrellas": 4,
+            "comentario": "Muy buena máquina, aunque los ventiladores se notan bastante cuando está demandada.",
+            "fecha": "2025-09-10",
+            "likes": 38,
+            "dislikes": 6
+          },
+          {
+            "usuario": "Sofía Torres",
+            "avatar": "https://i.pravatar.cc/150?img=16",
+            "estrellas": 3,
+            "comentario": "Está bien, pero esperaba que rinda más en los juegos pesados que uso.",
+            "fecha": "2025-08-15",
+            "likes": 20,
+            "dislikes": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "nombre": "MacBook Pro 14",
+      "marca": "Apple",
+      "precio": 4599900,
+      "descuento": 10,
+      "precioFinal": 4139910,
+      "descripcion": "MacBook Pro con chip M3 Pro, ideal para diseñadores y creadores de contenido. Potencia y eficiencia sin igual.",
+      "categoria": "diseño",
+      "imagen": "/images/product-3.webp",
+      "especificaciones": {
+        "procesador": "Apple M3 Pro",
+        "ram": "18GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "14.2 pulgadas Liquid Retina XDR"
+      },
+      "reseñas": {
+        "totalReseñas": 142,
+        "promedio": 4.7,
+        "distribucion": {
+          "5estrellas": 110,
+          "4estrellas": 25,
+          "3estrellas": 5,
+          "2estrellas": 1,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Lucía Herrera",
+            "avatar": "https://i.pravatar.cc/150?img=19",
+            "estrellas": 5,
+            "comentario": "Como diseñadora gráfica, esta laptop me hace volar con Photoshop y After Effects.",
+            "fecha": "2025-10-01",
+            "likes": 82,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Andrés Silva",
+            "avatar": "https://i.pravatar.cc/150?img=11",
+            "estrellas": 5,
+            "comentario": "Impresionante batería y rapidez. El chip M3 Pro es un salto brutal.",
+            "fecha": "2025-09-18",
+            "likes": 67,
+            "dislikes": 0
+          },
+          {
+            "usuario": "Camila Ruiz",
+            "avatar": "https://i.pravatar.cc/150?img=20",
+            "estrellas": 4,
+            "comentario": "Muy buena máquina, aunque un poco costosa. Pero vale la inversión para uso profesional.",
+            "fecha": "2025-09-05",
+            "likes": 39,
+            "dislikes": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "nombre": "Lenovo ThinkPad E15",
+      "marca": "Lenovo",
+      "precio": 1450000,
+      "descripcion": "Laptop empresarial robusta y confiable. Perfecta para profesionales que necesitan durabilidad y rendimiento.",
+      "categoria": "oficina",
+      "imagen": "/images/product-4.png",
+      "especificaciones": {
+        "procesador": "Intel Core i5-1335U",
+        "ram": "8GB",
+        "almacenamiento": "256GB SSD",
+        "pantalla": "15.6 pulgadas Full HD"
+      },
+      "reseñas": {
+        "totalReseñas": 77,
+        "promedio": 4.2,
+        "distribucion": {
+          "5estrellas": 40,
+          "4estrellas": 22,
+          "3estrellas": 10,
+          "2estrellas": 4,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Roberto Paz",
+            "avatar": "https://i.pravatar.cc/150?img=13",
+            "estrellas": 5,
+            "comentario": "El teclado ThinkPad es fantástico. Escribo mucho y no siento fatiga.",
+            "fecha": "2025-09-28",
+            "likes": 45,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Ana Benitez",
+            "avatar": "https://i.pravatar.cc/150?img=21",
+            "estrellas": 4,
+            "comentario": "Muy sólida y confiable para el trabajo diario. Cumple con lo que promete.",
+            "fecha": "2025-09-12",
+            "likes": 31,
+            "dislikes": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "nombre": "Dell XPS 15",
+      "marca": "Dell",
+      "precio": 2550000,
+      "descuento": 20,
+      "precioFinal": 2040000,
+      "descripcion": "Laptop premium para diseño gráfico y edición de video. Pantalla OLED 4K y potencia extrema.",
+      "categoria": "diseño",
+      "imagen": "/images/product-5.webp",
+      "especificaciones": {
+        "procesador": "Intel Core i7-13700H",
+        "ram": "32GB",
+        "almacenamiento": "1TB SSD",
+        "pantalla": "15.6 pulgadas OLED 4K",
+        "grafica": "NVIDIA RTX 4050"
+      },
+      "reseñas": {
+        "totalReseñas": 123,
+        "promedio": 4.6,
+        "distribucion": {
+          "5estrellas": 88,
+          "4estrellas": 27,
+          "3estrellas": 6,
+          "2estrellas": 1,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Daniela Flores",
+            "avatar": "https://i.pravatar.cc/150?img=22",
+            "estrellas": 5,
+            "comentario": "La pantalla OLED es espectacular, los colores son precisos y perfectos para diseño.",
+            "fecha": "2025-10-08",
+            "likes": 66,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Pablo Vargas",
+            "avatar": "https://i.pravatar.cc/150?img=12",
+            "estrellas": 5,
+            "comentario": "Edito videos 4K sin problemas. La RTX 4050 acelera todo el flujo.",
+            "fecha": "2025-09-20",
+            "likes": 52,
+            "dislikes": 2
+          },
+          {
+            "usuario": "Natalia Giménez",
+            "avatar": "https://i.pravatar.cc/150?img=23",
+            "estrellas": 4,
+            "comentario": "Muy potente, pero la batería podría durar un poco más con pantalla 4K.",
+            "fecha": "2025-09-03",
+            "likes": 38,
+            "dislikes": 7
+          },
+          {
+            "usuario": "Emilio Cortés",
+            "avatar": "https://i.pravatar.cc/150?img=14",
+            "estrellas": 4,
+            "comentario": "Diseño elegante, rendimiento premium. La recomendaría sin duda.",
+            "fecha": "2025-08-18",
+            "likes": 35,
+            "dislikes": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "nombre": "Acer Nitro 5",
+      "marca": "Acer",
+      "precio": 2320000,
+      "descripcion": "Laptop gamer económica pero potente. RTX 3050 y gran sistema de refrigeración para largas sesiones de juego.",
+      "categoria": "gamer",
+      "imagen": "/images/product-6.webp",
+      "especificaciones": {
+        "procesador": "Intel Core i5-12500H",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "15.6 pulgadas 144Hz",
+        "grafica": "NVIDIA RTX 3050"
+      },
+      "reseñas": {
+        "totalReseñas": 82,
+        "promedio": 4.3,
+        "distribucion": {
+          "5estrellas": 45,
+          "4estrellas": 25,
+          "3estrellas": 9,
+          "2estrellas": 2,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Maximiliano Sosa",
+            "avatar": "https://i.pravatar.cc/150?img=18",
+            "estrellas": 5,
+            "comentario": "Ideal para comenzar en el mundo gamer, todo fluye bastante bien.",
+            "fecha": "2025-10-02",
+            "likes": 43,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Florencia Ríos",
+            "avatar": "https://i.pravatar.cc/150?img=24",
+            "estrellas": 4,
+            "comentario": "Buena relación precio-calidad. El sistema de ventilación funciona correctamente.",
+            "fecha": "2025-09-15",
+            "likes": 29,
+            "dislikes": 3
+          },
+          {
+            "usuario": "Ignacio Blanco",
+            "avatar": "https://i.pravatar.cc/150?img=33",
+            "estrellas": 5,
+            "comentario": "Mi primera laptop para jugar, corre todo lo que le pido.",
+            "fecha": "2025-08-30",
+            "likes": 35,
+            "dislikes": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "nombre": "HP Envy 13",
+      "marca": "HP",
+      "precio": 1800000,
+      "descuento": 12,
+      "precioFinal": 1584000,
+      "descripcion": "Ultrabook delgada y ligera para oficina móvil. Batería de larga duración y diseño elegante.",
+      "categoria": "oficina",
+      "imagen": "/images/product-7.webp",
+      "especificaciones": {
+        "procesador": "Intel Core i7-1355U",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "13.3 pulgadas Full HD"
+      },
+      "reseñas": {
+        "totalReseñas": 68,
+        "promedio": 4.4,
+        "distribucion": {
+          "5estrellas": 40,
+          "4estrellas": 18,
+          "3estrellas": 8,
+          "2estrellas": 2,
+          "1estrella": 0
+        },
+        "comentarios": [
+          {
+            "usuario": "Juliana Vega",
+            "avatar": "https://i.pravatar.cc/150?img=25",
+            "estrellas": 5,
+            "comentario": "Liviana, elegante y con buen rendimiento para trabajar en movimiento.",
+            "fecha": "2025-09-25",
+            "likes": 37,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Nicolás Pereyra",
+            "avatar": "https://i.pravatar.cc/150?img=51",
+            "estrellas": 5,
+            "comentario": "La batería realmente dura bastante. Me encanta llevarla conmigo.",
+            "fecha": "2025-09-08",
+            "likes": 41,
+            "dislikes": 0
+          },
+          {
+            "usuario": "Romina Gutiérrez",
+            "avatar": "https://i.pravatar.cc/150?img=26",
+            "estrellas": 4,
+            "comentario": "Muy buena laptop, aunque para algunos la pantalla de 13\" puede ser pequeña.",
+            "fecha": "2025-08-22",
+            "likes": 24,
+            "dislikes": 5
+          },
+          {
+            "usuario": "Matías Cabrera",
+            "avatar": "https://i.pravatar.cc/150?img=52",
+            "estrellas": 5,
+            "comentario": "El diseño premium es real, parece mucho más cara de lo que cuesta.",
+            "fecha": "2025-07-28",
+            "likes": 29,
+            "dislikes": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "nombre": "MSI Creator Z16",
+      "marca": "MSI",
+      "precio": 3570000,
+      "descripcion": "Workstation portátil para diseñadores 3D y editores de video profesionales. Pantalla táctil QHD+.",
+      "categoria": "diseño",
+      "imagen": "/images/product-8.jpg",
+      "especificaciones": {
+        "procesador": "Intel Core i7-12700H",
+        "ram": "32GB",
+        "almacenamiento": "1TB SSD",
+        "pantalla": "16 pulgadas QHD+ Táctil",
+        "grafica": "NVIDIA RTX 4060"
+      },
+      "reseñas": {
+        "totalReseñas": 95,
+        "promedio": 4.6,
+        "distribucion": {
+          "5estrellas": 65,
+          "4estrellas": 22,
+          "3estrellas": 6,
+          "2estrellas": 1,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Agustina Medina",
+            "avatar": "https://i.pravatar.cc/150?img=32",
+            "estrellas": 5,
+            "comentario": "Excelente para trabajo en Blender y edición, todo fluye perfectamente.",
+            "fecha": "2025-10-06",
+            "likes": 58,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Rodrigo Acosta",
+            "avatar": "https://i.pravatar.cc/150?img=53",
+            "estrellas": 5,
+            "comentario": "La pantalla táctil es un plus genial para diseño digital, muy precisa.",
+            "fecha": "2025-09-19",
+            "likes": 49,
+            "dislikes": 0
+          },
+          {
+            "usuario": "Alejandra Molina",
+            "avatar": "https://i.pravatar.cc/150?img=36",
+            "estrellas": 4,
+            "comentario": "Muy buena máquina profesional, solo que es un poco pesada para llevar todos los días.",
+            "fecha": "2025-08-28",
+            "likes": 32,
+            "dislikes": 4
+          },
+          {
+            "usuario": "Tomás Figueroa",
+            "avatar": "https://i.pravatar.cc/150?img=54",
+            "estrellas": 5,
+            "comentario": "Vale completamente la inversión para mi estudio creativo.",
+            "fecha": "2025-08-05",
+            "likes": 41,
+            "dislikes": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "nombre": "Lenovo Legion 5 Pro",
+      "marca": "Lenovo",
+      "precio": 3120000,
+      "descuento": 18,
+      "precioFinal": 2558400,
+      "descripcion": "Laptop gamer con excelente relación calidad-precio. Pantalla WQHD de 165Hz y gran capacidad de refrigeración.",
+      "categoria": "gamer",
+      "imagen": "/images/product-9.webp",
+      "especificaciones": {
+        "procesador": "AMD Ryzen 7 6800H",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "16 pulgadas WQHD 165Hz",
+        "grafica": "NVIDIA RTX 4060"
+      },
+      "reseñas": {
+        "totalReseñas": 210,
+        "promedio": 4.7,
+        "distribucion": {
+          "5estrellas": 150,
+          "4estrellas": 45,
+          "3estrellas": 10,
+          "2estrellas": 3,
+          "1estrella": 2
+        },
+        "comentarios": [
+          {
+            "usuario": "Bruno Navarro",
+            "avatar": "https://i.pravatar.cc/150?img=55",
+            "estrellas": 5,
+            "comentario": "La mejor relación calidad-precio que encontré. Rendimiento brutal.",
+            "fecha": "2025-10-10",
+            "likes": 80,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Victoria Reyes",
+            "avatar": "https://i.pravatar.cc/150?img=38",
+            "estrellas": 5,
+            "comentario": "Impresionante pantalla WQHD de 16 \", se ve todo excelente.",
+            "fecha": "2025-09-27",
+            "likes": 67,
+            "dislikes": 2
+          },
+          {
+            "usuario": "Lucas Campos",
+            "avatar": "https://i.pravatar.cc/150?img=56",
+            "estrellas": 5,
+            "comentario": "Ryzen 7 6800H es una bestia, multitarea sin atascos.",
+            "fecha": "2025-09-14",
+            "likes": 71,
+            "dislikes": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "nombre": "ASUS VivoBook 15",
+      "marca": "ASUS",
+      "precio": 899000,
+      "descripcion": "Laptop económica para tareas básicas de oficina. Ideal para estudiantes y trabajo remoto.",
+      "categoria": "oficina",
+      "imagen": "/images/product-10.jpeg",
+      "especificaciones": {
+        "procesador": "Intel Core i3-1215U",
+        "ram": "8GB",
+        "almacenamiento": "256GB SSD",
+        "pantalla": "15.6 pulgadas HD"
+      },
+      "reseñas": {
+        "totalReseñas": 58,
+        "promedio": 3.9,
+        "distribucion": {
+          "5estrellas": 25,
+          "4estrellas": 18,
+          "3estrellas": 10,
+          "2estrellas": 4,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Joaquín Sánchez",
+            "avatar": "https://i.pravatar.cc/150?img=57",
+            "estrellas": 5,
+            "comentario": "Excelente para tareas simples, muy buena opción para estudiantes.",
+            "fecha": "2025-09-30",
+            "likes": 33,
+            "dislikes": 2
+          },
+          {
+            "usuario": "Valentina Ibarra",
+            "avatar": "https://i.pravatar.cc/150?img=38",
+            "estrellas": 4,
+            "comentario": "Hace lo que promete, para oficina básica va bien.",
+            "fecha": "2025-09-11",
+            "likes": 22,
+            "dislikes": 3
+          },
+          {
+            "usuario": "Ezequiel Ponce",
+            "avatar": "https://i.pravatar.cc/150?img=58",
+            "estrellas": 3,
+            "comentario": "Está bien para su precio, pero la pantalla HD es algo limitada.",
+            "fecha": "2025-08-24",
+            "likes": 12,
+            "dislikes": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "nombre": "Razer Blade 15",
+      "marca": "Razer",
+      "precio": 4399000,
+      "descripcion": "Laptop gamer premium ultradelgada. Construcción en aluminio y RGB Chroma personalizable.",
+      "categoria": "gamer",
+      "imagen": "/images/product-11.jpg",
+      "especificaciones": {
+        "procesador": "Intel Core i7-13800H",
+        "ram": "32GB",
+        "almacenamiento": "1TB SSD",
+        "pantalla": "15.6 pulgadas QHD 240Hz",
+        "grafica": "NVIDIA RTX 4070"
+      },
+      "reseñas": {
+        "totalReseñas": 75,
+        "promedio": 4.3,
+        "distribucion": {
+          "5estrellas": 38,
+          "4estrellas": 22,
+          "3estrellas": 10,
+          "2estrellas": 3,
+          "1estrella": 2
+        },
+        "comentarios": [
+          {
+            "usuario": "Ignacio Álvarez",
+            "avatar": "https://i.pravatar.cc/150?img=59",
+            "estrellas": 5,
+            "comentario": "Potente, elegante, diseño premium. Muy recomendable.",
+            "fecha": "2025-10-05",
+            "likes": 41,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Larisa Vega",
+            "avatar": "https://i.pravatar.cc/150?img=39",
+            "estrellas": 4,
+            "comentario": "Excelente rendimiento, aunque se calienta un poco en sesiones largas.",
+            "fecha": "2025-09-13",
+            "likes": 27,
+            "dislikes": 4
+          },
+          {
+            "usuario": "Tomás Muñoz",
+            "avatar": "https://i.pravatar.cc/150?img=60",
+            "estrellas": 3,
+            "comentario": "Buena máquina, pero bastante cara para el exceso de calor en uso intensivo.",
+            "fecha": "2025-08-20",
+            "likes": 15,
+            "dislikes": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "nombre": "Dell Inspiron 15",
+      "marca": "Dell",
+      "precio": 950000,
+      "descuento": 8,
+      "precioFinal": 874000,
+      "descripcion": "Laptop versátil para uso general en oficina. Buena batería y teclado cómodo para largas jornadas.",
+      "categoria": "oficina",
+      "imagen": "/images/product-12.jpg",
+      "especificaciones": {
+        "procesador": "Intel Core i5-1235U",
+        "ram": "8GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "15.6 pulgadas Full HD"
+      },
+      "reseñas": {
+        "totalReseñas": 61,
+        "promedio": 4.0,
+        "distribucion": {
+          "5estrellas": 28,
+          "4estrellas": 20,
+          "3estrellas": 9,
+          "2estrellas": 3,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Marcos Torres",
+            "avatar": "https://i.pravatar.cc/150?img=61",
+            "estrellas": 5,
+            "comentario": "Buen equipo para tareas generales, confiable y sin sorpresas.",
+            "fecha": "2025-09-29",
+            "likes": 25,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Liliana Ruiz",
+            "avatar": "https://i.pravatar.cc/150?img=40",
+            "estrellas": 4,
+            "comentario": "Cumple bien con oficina y navegación web, aunque no esperes potencias de gamer.",
+            "fecha": "2025-09-10",
+            "likes": 18,
+            "dislikes": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "nombre": "MacBook Air M2",
+      "marca": "Apple",
+      "precio": 1990000,
+      "descripcion": "Ultrabook perfecta para diseñadores que trabajan en movimiento. Ligera, silenciosa y con batería de todo el día.",
+      "categoria": "diseño",
+      "imagen": "/images/product-13.jpg",
+      "especificaciones": {
+        "procesador": "Apple M2",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "13.6 pulgadas Liquid Retina"
+      },
+      "reseñas": {
+        "totalReseñas": 98,
+        "promedio": 4.5,
+        "distribucion": {
+          "5estrellas": 65,
+          "4estrellas": 25,
+          "3estrellas": 6,
+          "2estrellas": 1,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Silvia Contreras",
+            "avatar": "https://i.pravatar.cc/150?img=41",
+            "estrellas": 5,
+            "comentario": "Silenciosa, liviana y con excelente autonomía. Ideal para trabajar sobre la marcha.",
+            "fecha": "2025-09-20",
+            "likes": 53,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Federico Gómez",
+            "avatar": "https://i.pravatar.cc/150?img=62",
+            "estrellas": 4,
+            "comentario": "Muy buena en general, aunque me gustaría más puertos para conectar dispositivos.",
+            "fecha": "2025-09-05",
+            "likes": 29,
+            "dislikes": 3
+          },
+          {
+            "usuario": "Vanesa Ríos",
+            "avatar": "https://i.pravatar.cc/150?img=43",
+            "estrellas": 5,
+            "comentario": "Ideal para viajes: pesa poco y da mucho rendimiento.",
+            "fecha": "2025-08-22",
+            "likes": 41,
+            "dislikes": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "nombre": "Gigabyte AORUS 15",
+      "marca": "Gigabyte",
+      "precio": 2590000,
+      "descuento": 15,
+      "precioFinal": 2201500,
+      "descripcion": "Laptop gamer con pantalla de alto refresh rate. Ideal para esports y streaming simultáneo.",
+      "categoria": "gamer",
+      "imagen": "/images/product-14.jpg",
+      "especificaciones": {
+        "procesador": "Intel Core i7-12700H",
+        "ram": "16GB",
+        "almacenamiento": "1TB SSD",
+        "pantalla": "15.6 pulgadas 360Hz",
+        "grafica": "NVIDIA RTX 4060"
+      },
+      "reseñas": {
+        "totalReseñas": 82,
+        "promedio": 4.4,
+        "distribucion": {
+          "5estrellas": 45,
+          "4estrellas": 25,
+          "3estrellas": 9,
+          "2estrellas": 2,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Marcelo Díaz",
+            "avatar": "https://i.pravatar.cc/150?img=64",
+            "estrellas": 5,
+            "comentario": "Pantalla 360 Hz es una bestia, ideal para juegos competitivos.",
+            "fecha": "2025-10-01",
+            "likes": 47,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Lucía Herrera",
+            "avatar": "https://i.pravatar.cc/150?img=42",
+            "estrellas": 4,
+            "comentario": "Muy buen rendimiento, aunque el ruido de los ventiladores puede molestar.",
+            "fecha": "2025-09-12",
+            "likes": 29,
+            "dislikes": 5
+          },
+          {
+            "usuario": "Bruno Alvarez",
+            "avatar": "https://i.pravatar.cc/150?img=65",
+            "estrellas": 3,
+            "comentario": "Rinde bien, pero esperaba algo más para el precio que tiene.",
+            "fecha": "2025-08-20",
+            "likes": 14,
+            "dislikes": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "nombre": "Microsoft Surface Laptop 5",
+      "marca": "Microsoft",
+      "precio": 1450000,
+      "descripcion": "Laptop elegante para profesionales. Pantalla táctil PixelSense y diseño minimalista premium.",
+      "categoria": "oficina",
+      "imagen": "/images/product-15.webp",
+      "especificaciones": {
+        "procesador": "Intel Core i7-1255U",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "13.5 pulgadas PixelSense Táctil"
+      },
+      "reseñas": {
+        "totalReseñas": 58,
+        "promedio": 4.2,
+        "distribucion": {
+          "5estrellas": 30,
+          "4estrellas": 18,
+          "3estrellas": 8,
+          "2estrellas": 1,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Alejandra Silva",
+            "avatar": "https://i.pravatar.cc/150?img=44",
+            "estrellas": 5,
+            "comentario": "Muy elegante y funcional, amo su diseño y pantalla táctil.",
+            "fecha": "2025-10-03",
+            "likes": 37,
+            "dislikes": 0
+          },
+          {
+            "usuario": "Germán Olmos",
+            "avatar": "https://i.pravatar.cc/150?img=67",
+            "estrellas": 4,
+            "comentario": "Excelente para oficina móvil, aunque el costo me parece alto.",
+            "fecha": "2025-09-10",
+            "likes": 22,
+            "dislikes": 3
+          },
+          {
+            "usuario": "Carolina Peña",
+            "avatar": "https://i.pravatar.cc/150?img=45",
+            "estrellas": 3,
+            "comentario": "Buena experiencia, pero esperaba mejor desempeño para tareas exigentes.",
+            "fecha": "2025-08-18",
+            "likes": 12,
+            "dislikes": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "nombre": "HP Omen 16",
+      "marca": "HP",
+      "precio": 3890000,
+      "descripcion": "Laptop gamer con pantalla grande para inmersión total. Sistema de refrigeración OMEN Tempest.",
+      "categoria": "gamer",
+      "imagen": "/images/product-16.jpg",
+      "especificaciones": {
+        "procesador": "Intel Core i7-13700HX",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "16.1 pulgadas QHD 165Hz",
+        "grafica": "NVIDIA RTX 4050"
+      },
+      "reseñas": {
+        "totalReseñas": 74,
+        "promedio": 4.3,
+        "distribucion": {
+          "5estrellas": 38,
+          "4estrellas": 22,
+          "3estrellas": 10,
+          "2estrellas": 3,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Fernando Castro",
+            "avatar": "https://i.pravatar.cc/150?img=68",
+            "estrellas": 5,
+            "comentario": "Gran balance entre pantalla y potencia. Muy recomendado para gaming.",
+            "fecha": "2025-10-04",
+            "likes": 40,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Luciana Pérez",
+            "avatar": "https://i.pravatar.cc/150?img=47",
+            "estrellas": 4,
+            "comentario": "Muy buena laptop, aunque el peso es algo que se nota.",
+            "fecha": "2025-09-15",
+            "likes": 22,
+            "dislikes": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "nombre": "LG Gram 17",
+      "marca": "LG",
+      "precio": 2850000,
+      "descuento": 10,
+      "precioFinal": 2565000,
+      "descripcion": "Laptop ultraligera de 17 pulgadas para diseñadores que necesitan pantalla grande sin sacrificar portabilidad.",
+      "categoria": "diseño",
+      "imagen": "/images/product-17.webp",
+      "especificaciones": {
+        "procesador": "Intel Core i7-1360P",
+        "ram": "16GB",
+        "almacenamiento": "1TB SSD",
+        "pantalla": "17 pulgadas WQXGA"
+      },
+      "reseñas": {
+        "totalReseñas": 63,
+        "promedio": 4.4,
+        "distribucion": {
+          "5estrellas": 34,
+          "4estrellas": 19,
+          "3estrellas": 8,
+          "2estrellas": 1,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Adriana Vega",
+            "avatar": "https://i.pravatar.cc/150?img=48",
+            "estrellas": 5,
+            "comentario": "Increíble que pese tan poco para tener 17 pulgadas. Muy feliz con la compra.",
+            "fecha": "2025-09-26",
+            "likes": 38,
+            "dislikes": 0
+          },
+          {
+            "usuario": "Esteban Ruiz",
+            "avatar": "https://i.pravatar.cc/150?img=68",
+            "estrellas": 4,
+            "comentario": "Perfecta para diseño, aunque para transporte se siente un poco grande.",
+            "fecha": "2025-09-10",
+            "likes": 22,
+            "dislikes": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "nombre": "Acer Aspire 5",
+      "marca": "Acer",
+      "precio": 1370000,
+      "descripcion": "Laptop económica y confiable para oficina. Excelente para videoconferencias y trabajo colaborativo.",
+      "categoria": "oficina",
+      "imagen": "/images/product-18.jpg",
+      "especificaciones": {
+        "procesador": "Intel Core i5-1235U",
+        "ram": "8GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "15.6 pulgadas Full HD"
+      },
+      "reseñas": {
+        "totalReseñas": 51,
+        "promedio": 3.8,
+        "distribucion": {
+          "5estrellas": 20,
+          "4estrellas": 18,
+          "3estrellas": 9,
+          "2estrellas": 3,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Diego Luna",
+            "avatar": "https://i.pravatar.cc/150?img=69",
+            "estrellas": 5,
+            "comentario": "Muy buena para tareas básicas, cumple con lo esperado.",
+            "fecha": "2025-09-20",
+            "likes": 23,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Camila Soto",
+            "avatar": "https://i.pravatar.cc/150?img=49",
+            "estrellas": 4,
+            "comentario": "Buena relación calidad-precio, aunque para edición pesada se queda corta.",
+            "fecha": "2025-09-05",
+            "likes": 18,
+            "dislikes": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "nombre": "ASUS TUF Gaming A15",
+      "marca": "ASUS",
+      "precio": 4130000,
+      "descuento": 20,
+      "precioFinal": 3304000,
+      "descripcion": "Laptop gamer resistente con certificación militar. Construcción robusta para gamers que viajan.",
+      "categoria": "gamer",
+      "imagen": "/images/product-19.jpg",
+      "especificaciones": {
+        "procesador": "AMD Ryzen 7 7735HS",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "15.6 pulgadas 144Hz",
+        "grafica": "NVIDIA RTX 4050"
+      },
+      "reseñas": {
+        "totalReseñas": 69,
+        "promedio": 4.2,
+        "distribucion": {
+          "5estrellas": 30,
+          "4estrellas": 22,
+          "3estrellas": 10,
+          "2estrellas": 5,
+          "1estrella": 2
+        },
+        "comentarios": [
+          {
+            "usuario": "Gustavo Herrera",
+            "avatar": "https://i.pravatar.cc/150?img=1",
+            "estrellas": 5,
+            "comentario": "Robusta y rendidora. Ideal para llevar de viaje sin temor.",
+            "fecha": "2025-09-28",
+            "likes": 32,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Mariana Ortega",
+            "avatar": "https://i.pravatar.cc/150?img=5",
+            "estrellas": 4,
+            "comentario": "Muy buena laptop gamer para su precio, aunque esperaba más fps en algunos juegos.",
+            "fecha": "2025-09-12",
+            "likes": 24,
+            "dislikes": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "nombre": "Dell Precision 5570",
+      "marca": "Dell",
+      "precio": 4680000,
+      "descripcion": "Workstation móvil para profesionales del diseño 3D y CAD. Certificada para software profesional.",
+      "categoria": "diseño",
+      "imagen": "/images/product-20.webp",
+      "especificaciones": {
+        "procesador": "Intel Core i9-12900H",
+        "ram": "32GB",
+        "almacenamiento": "1TB SSD",
+        "pantalla": "15.6 pulgadas 4K OLED",
+        "grafica": "NVIDIA RTX A2000"
+      },
+      "reseñas": {
+        "totalReseñas": 58,
+        "promedio": 4.4,
+        "distribucion": {
+          "5estrellas": 32,
+          "4estrellas": 18,
+          "3estrellas": 6,
+          "2estrellas": 1,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Carla Jiménez",
+            "avatar": "https://i.pravatar.cc/150?img=10",
+            "estrellas": 5,
+            "comentario": "Ideal para renderizar proyectos complejos, no le falta nada.",
+            "fecha": "2025-10-05",
+            "likes": 37,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Bruno Ruiz",
+            "avatar": "https://i.pravatar.cc/150?img=11",
+            "estrellas": 4,
+            "comentario": "Muy buena workstation, aunque algo pesada comparada con otras opciones.",
+            "fecha": "2025-09-18",
+            "likes": 22,
+            "dislikes": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "nombre": "Lenovo IdeaPad 3",
+      "marca": "Lenovo",
+      "precio": 1180000,
+      "descripcion": "Laptop básica para tareas de oficina esenciales. Perfecta para presupuestos ajustados.",
+      "categoria": "oficina",
+      "imagen": "/images/product-21.avif",
+      "especificaciones": {
+        "procesador": "Intel Core i3-1215U",
+        "ram": "8GB",
+        "almacenamiento": "256GB SSD",
+        "pantalla": "15.6 pulgadas HD"
+      },
+      "reseñas": {
+        "totalReseñas": 49,
+        "promedio": 3.9,
+        "distribucion": {
+          "5estrellas": 18,
+          "4estrellas": 15,
+          "3estrellas": 10,
+          "2estrellas": 4,
+          "1estrella": 2
+        },
+        "comentarios": [
+          {
+            "usuario": "Javier Martínez",
+            "avatar": "https://i.pravatar.cc/150?img=13",
+            "estrellas": 4,
+            "comentario": "Cumple para oficina básica y navegación diaria.",
+            "fecha": "2025-09-25",
+            "likes": 19,
+            "dislikes": 2
+          },
+          {
+            "usuario": "Sandra López",
+            "avatar": "https://i.pravatar.cc/150?img=9",
+            "estrellas": 5,
+            "comentario": "Buen equipo por el precio que tiene, nada espectacular pero funcional.",
+            "fecha": "2025-09-10",
+            "likes": 21,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Pedro Castillo",
+            "avatar": "https://i.pravatar.cc/150?img=18",
+            "estrellas": 3,
+            "comentario": "Está bien, pero con tareas pesadas se queda corto.",
+            "fecha": "2025-08-22",
+            "likes": 8,
+            "dislikes": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "nombre": "MSI Katana GF66",
+      "marca": "MSI",
+      "precio": 2830000,
+      "descuento": 12,
+      "precioFinal": 2490400,
+      "descripcion": "Laptop gamer de entrada con buen rendimiento. Diseño inspirado en espadas samurái.",
+      "categoria": "gamer",
+      "imagen": "/images/product-22.webp",
+      "especificaciones": {
+        "procesador": "Intel Core i5-12450H",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "15.6 pulgadas 144Hz",
+        "grafica": "NVIDIA RTX 3050 Ti"
+      },
+      "reseñas": {
+        "totalReseñas": 64,
+        "promedio": 4.1,
+        "distribucion": {
+          "5estrellas": 28,
+          "4estrellas": 20,
+          "3estrellas": 10,
+          "2estrellas": 5,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Miguel Torres",
+            "avatar": "https://i.pravatar.cc/150?img=15",
+            "estrellas": 5,
+            "comentario": "Muy buena opción de entrada al gaming, rinde bien para su precio.",
+            "fecha": "2025-09-28",
+            "likes": 29,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Sofía Ramos",
+            "avatar": "https://i.pravatar.cc/150?img=21",
+            "estrellas": 4,
+            "comentario": "Buen rendimiento general, aunque los ventiladores se escuchan mucho.",
+            "fecha": "2025-09-10",
+            "likes": 17,
+            "dislikes": 4
+          },
+          {
+            "usuario": "Rodrigo Guerrero",
+            "avatar": "https://i.pravatar.cc/150?img=14",
+            "estrellas": 3,
+            "comentario": "Aceptable para juegos no tan exigentes, pero no da para todo.",
+            "fecha": "2025-08-22",
+            "likes": 9,
+            "dislikes": 6
+          }
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "nombre": "HP ZBook Studio G9",
+      "marca": "HP",
+      "precio": 4170000,
+      "descripcion": "Estación de trabajo móvil para arquitectos y diseñadores industriales. Potencia profesional certificada.",
+      "categoria": "diseño",
+      "imagen": "/images/product-23.png",
+      "especificaciones": {
+        "procesador": "Intel Core i7-12800H",
+        "ram": "32GB",
+        "almacenamiento": "1TB SSD",
+        "pantalla": "15.6 pulgadas DreamColor 4K",
+        "grafica": "NVIDIA RTX A3000"
+      },
+      "reseñas": {
+        "totalReseñas": 57,
+        "promedio": 4.5,
+        "distribucion": {
+          "5estrellas": 32,
+          "4estrellas": 18,
+          "3estrellas": 5,
+          "2estrellas": 1,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Daniel López",
+            "avatar": "https://i.pravatar.cc/150?img=50",
+            "estrellas": 5,
+            "comentario": "Perfecta para trabajos arquitectónicos, fluidez total en CAD y 3D.",
+            "fecha": "2025-10-02",
+            "likes": 36,
+            "dislikes": 1
+          },
+          {
+            "usuario": "María Sánchez",
+            "avatar": "https://i.pravatar.cc/150?img=28",
+            "estrellas": 4,
+            "comentario": "Muy buena estación de trabajo portátil, aunque esperaría más duración de batería.",
+            "fecha": "2025-09-12",
+            "likes": 22,
+            "dislikes": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "nombre": "ASUS ZenBook 14",
+      "marca": "ASUS",
+      "precio": 1490000,
+      "descripcion": "Ultrabook premium para profesionales móviles. Pantalla OLED y diseño ultracompacto.",
+      "categoria": "oficina",
+      "imagen": "/images/product-24.jpg",
+      "especificaciones": {
+        "procesador": "Intel Core i7-1355U",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "14 pulgadas OLED Full HD"
+      },
+      "reseñas": {
+        "totalReseñas": 61,
+        "promedio": 4.3,
+        "distribucion": {
+          "5estrellas": 30,
+          "4estrellas": 20,
+          "3estrellas": 9,
+          "2estrellas": 1,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Beatriz Ramírez",
+            "avatar": "https://i.pravatar.cc/150?img=49",
+            "estrellas": 5,
+            "comentario": "Bonita, compacta y funcional. Ideal para oficina portátil.",
+            "fecha": "2025-09-27",
+            "likes": 30,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Germán Fuentes",
+            "avatar": "https://i.pravatar.cc/150?img=54",
+            "estrellas": 4,
+            "comentario": "Muy buena opción, aunque para edición exigente puede quedarse corta.",
+            "fecha": "2025-09-10",
+            "likes": 21,
+            "dislikes": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "nombre": "Alienware m15 R7",
+      "marca": "Alienware",
+      "precio": 3810000,
+      "descuento": 15,
+      "precioFinal": 3238500,
+      "descripcion": "Laptop gamer de élite con diseño futurista. RGB personalizable y rendimiento máximo.",
+      "categoria": "gamer",
+      "imagen": "/images/product-25.jpg",
+      "especificaciones": {
+        "procesador": "Intel Core i9-12900H",
+        "ram": "32GB",
+        "almacenamiento": "1TB SSD",
+        "pantalla": "15.6 pulgadas QHD 240Hz",
+        "grafica": "NVIDIA RTX 4070"
+      },
+      "reseñas": {
+        "totalReseñas": 48,
+        "promedio": 4.2,
+        "distribucion": {
+          "5estrellas": 22,
+          "4estrellas": 16,
+          "3estrellas": 7,
+          "2estrellas": 2,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Martín Espinoza",
+            "avatar": "https://i.pravatar.cc/150?img=52",
+            "estrellas": 5,
+            "comentario": "Un monstro gamer. No encontré juego que le falte potencia.",
+            "fecha": "2025-10-06",
+            "likes": 25,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Elena Moreno",
+            "avatar": "https://i.pravatar.cc/150?img=47",
+            "estrellas": 4,
+            "comentario": "Muy buena, aunque un poco ruidosa bajo carga completa.",
+            "fecha": "2025-09-18",
+            "likes": 15,
+            "dislikes": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "nombre": "Microsoft Surface Pro 9",
+      "marca": "Microsoft",
+      "precio": 3720000,
+      "descripcion": "2-en-1 para diseñadores que necesitan versatilidad. Incluye Surface Pen para dibujo digital.",
+      "categoria": "diseño",
+      "imagen": "/images/product-26.jpg",
+      "especificaciones": {
+        "procesador": "Intel Core i7-1255U",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "13 pulgadas PixelSense Táctil"
+      },
+      "reseñas": {
+        "totalReseñas": 53,
+        "promedio": 4.3,
+        "distribucion": {
+          "5estrellas": 28,
+          "4estrellas": 18,
+          "3estrellas": 6,
+          "2estrellas": 1,
+          "1estrella": 0
+        },
+        "comentarios": [
+          {
+            "usuario": "Lorena Díaz",
+            "avatar": "https://i.pravatar.cc/150?img=48",
+            "estrellas": 5,
+            "comentario": "Excelente para ilustración y diseño digital con el lápiz incluido.",
+            "fecha": "2025-10-04",
+            "likes": 32,
+            "dislikes": 0
+          },
+          {
+            "usuario": "Diego Ramos",
+            "avatar": "https://i.pravatar.cc/150?img=53",
+            "estrellas": 4,
+            "comentario": "Muy buena opción 2-en-1, aunque la autonomía podría mejoras.",
+            "fecha": "2025-09-15",
+            "likes": 17,
+            "dislikes": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "nombre": "Lenovo ThinkBook 15",
+      "marca": "Lenovo",
+      "precio": 1960000,
+      "descuento": 10,
+      "precioFinal": 1764000,
+      "descripcion": "Laptop empresarial moderna con funciones de seguridad avanzadas. Ideal para PyMES.",
+      "categoria": "oficina",
+      "imagen": "/images/product-27.webp",
+      "especificaciones": {
+        "procesador": "Intel Core i5-1335U",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "15.6 pulgadas Full HD"
+      },
+      "reseñas": {
+        "totalReseñas": 49,
+        "promedio": 4.1,
+        "distribucion": {
+          "5estrellas": 22,
+          "4estrellas": 15,
+          "3estrellas": 8,
+          "2estrellas": 3,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Pablo Rojas",
+            "avatar": "https://i.pravatar.cc/150?img=56",
+            "estrellas": 5,
+            "comentario": "Muy buena laptop empresarial, funciones de seguridad muy útiles.",
+            "fecha": "2025-09-22",
+            "likes": 24,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Ana Delgado",
+            "avatar": "https://i.pravatar.cc/150?img=45",
+            "estrellas": 4,
+            "comentario": "Cumple excelente para tareas de oficina, aunque no esperes juegos exigentes.",
+            "fecha": "2025-09-10",
+            "likes": 16,
+            "dislikes": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "nombre": "Samsung Galaxy Book3 Pro",
+      "marca": "Samsung",
+      "precio": 3540000,
+      "descripcion": "Laptop ultraligera con pantalla AMOLED para diseñadores gráficos. Integración perfecta con Galaxy.",
+      "categoria": "diseño",
+      "imagen": "/images/product-28.jpg",
+      "especificaciones": {
+        "procesador": "Intel Core i7-1360P",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "14 pulgadas AMOLED 3K"
+      },
+      "reseñas": {
+        "totalReseñas": 50,
+        "promedio": 4.3,
+        "distribucion": {
+          "5estrellas": 27,
+          "4estrellas": 15,
+          "3estrellas": 6,
+          "2estrellas": 1,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Cecilia Flores",
+            "avatar": "https://i.pravatar.cc/150?img=44",
+            "estrellas": 5,
+            "comentario": "La pantalla AMOLED es espectacular, colores vivos y contraste excelente.",
+            "fecha": "2025-09-28",
+            "likes": 28,
+            "dislikes": 0
+          },
+          {
+            "usuario": "Javier Carrillo",
+            "avatar": "https://i.pravatar.cc/150?img=58",
+            "estrellas": 4,
+            "comentario": "Muy buena para diseño gráfico, aunque esperaba más duración de batería.",
+            "fecha": "2025-09-10",
+            "likes": 16,
+            "dislikes": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "nombre": "Acer Predator Helios 300",
+      "marca": "Acer",
+      "precio": 2610000,
+      "descripcion": "Laptop gamer con excelente sistema de refrigeración AeroBlade 3D. Overclocking fácil y seguro.",
+      "categoria": "gamer",
+      "imagen": "/images/product-29.jpg",
+      "especificaciones": {
+        "procesador": "Intel Core i7-12700H",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "15.6 pulgadas Full HD 165Hz",
+        "grafica": "NVIDIA RTX 4060"
+      },
+      "reseñas": {
+        "totalReseñas": 78,
+        "promedio": 4.5,
+        "distribucion": {
+          "5estrellas": 48,
+          "4estrellas": 22,
+          "3estrellas": 6,
+          "2estrellas": 1,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Luis Castillo",
+            "avatar": "https://i.pravatar.cc/150?img=59",
+            "estrellas": 5,
+            "comentario": "Increíble para juegos exigentes, refrigeración excelente.",
+            "fecha": "2025-10-01",
+            "likes": 38,
+            "dislikes": 1
+          },
+          {
+            "usuario": "Mariana Jiménez",
+            "avatar": "https://i.pravatar.cc/150?img=34",
+            "estrellas": 4,
+            "comentario": "Muy buena opción gamer, aunque algo de ruido al exigirle mucho.",
+            "fecha": "2025-09-10",
+            "likes": 22,
+            "dislikes": 4
+          },
+          {
+            "usuario": "Felipe Romero",
+            "avatar": "https://i.pravatar.cc/150?img=60",
+            "estrellas": 3,
+            "comentario": "Está bien para su precio, pero esperaba sustancialmente más fps en algunos juegos.",
+            "fecha": "2025-08-22",
+            "likes": 10,
+            "dislikes": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "nombre": "HP ProBook 450 G9",
+      "marca": "HP",
+      "precio": 1630000,
+      "descuento": 8,
+      "precioFinal": 1499600,
+      "descripcion": "Laptop empresarial confiable con funciones de gestión remota. Perfecta para IT corporativo.",
+      "categoria": "oficina",
+      "imagen": "/images/product-30.avif",
+      "especificaciones": {
+        "procesador": "Intel Core i7-1255U",
+        "ram": "16GB",
+        "almacenamiento": "512GB SSD",
+        "pantalla": "15.6 pulgadas Full HD"
+      },
+      "reseñas": {
+        "totalReseñas": 66,
+        "promedio": 4.2,
+        "distribucion": {
+          "5estrellas": 32,
+          "4estrellas": 20,
+          "3estrellas": 10,
+          "2estrellas": 3,
+          "1estrella": 1
+        },
+        "comentarios": [
+          {
+            "usuario": "Andrés Vega",
+            "avatar": "https://i.pravatar.cc/150?img=61",
+            "estrellas": 5,
+            "comentario": "Muy buena laptop empresarial, confiable y sin fallas.",
+            "fecha": "2025-09-29",
+            "likes": 34,
+            "dislikes": 1
+          },
+          {
+            "usuario": "María Torres",
+            "avatar": "https://i.pravatar.cc/150?img=32",
+            "estrellas": 4,
+            "comentario": "Cumple con las expectativas, aunque me gustaría más duración de batería.",
+            "fecha": "2025-09-10",
+            "likes": 19,
+            "dislikes": 3
+          }
+        ]
+      }
+    }
+  ]
+}
