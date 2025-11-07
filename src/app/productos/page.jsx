@@ -69,11 +69,11 @@ const ProductsPage = async ({ searchParams }) => {
     <div className="flex flex-col lg:flex-row lg:py-6 overflow-hidden">
       <Filters />
       <main id="main-products" className="basis-[80%] overflow-auto h-[calc(100vh-120px)]">
-        <div className="flex my-4 px-3 lg:p-0 flex-wrap gap-3 lg:gap-6 min-h-[500px]">
+        <div className="flex my-4 lg:my-0 px-3 lg:p-0 flex-wrap gap-3 lg:gap-6">
           {paginatedProducts.length > 0 ? (
             paginatedProducts.map(product => <CardProduct key={product.nombre} product={product} />)
           ) : (
-            <p className="text-xl text-center w-full">No se encontraron productos</p>
+            <p className="lg:text-xl text-center w-full">No se encontraron productos</p>
           )}
         </div>
         

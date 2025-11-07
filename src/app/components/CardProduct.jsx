@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import { baseUrl, numberFormat } from "../utils/utils"
+import { numberFormat } from "../utils/utils"
 import { useRouter } from "next/navigation";
 
 const CardProduct = ({ product }) => {
