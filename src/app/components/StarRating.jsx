@@ -1,7 +1,7 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 
-const StarRating = ({ rating = 0, maxRating = 5, size = 24 }) => {
+const StarRating = ({ rating = 0, maxRating = 5, className = "w-[18px] lg:w-[24px]" }) => {
   return (
     <div className="flex items-center gap-1">
       {/* calcula si cada estrella tiene que ser completa o no */}
@@ -15,8 +15,7 @@ const StarRating = ({ rating = 0, maxRating = 5, size = 24 }) => {
             {isPartial ? (
               <div className="relative">
                 <Star
-                  size={size}
-                  className="text-gray-300"
+                  className={`text-gray-300 ${className}`}
                   fill="currentColor"
                 />
                 <div 
@@ -24,16 +23,14 @@ const StarRating = ({ rating = 0, maxRating = 5, size = 24 }) => {
                   style={{ width: `${fillPercentage * 100}%` }}
                 >
                   <Star
-                    size={size}
-                    className="text-yellow-400"
+                    className={`text-yellow-400 ${className}`}
                     fill="currentColor"
                   />
                 </div>
               </div>
             ) : (
               <Star
-                size={size}
-                className={isFilled ? 'text-yellow-400' : 'text-gray-300'}
+                className={`${isFilled ? 'text-yellow-400' : 'text-gray-300'} ${className}`}
                 fill="currentColor"
               />
             )}

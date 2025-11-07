@@ -7,7 +7,7 @@ const CardProduct = ({ product }) => {
   const router = useRouter()
 
   const handleRouter = (url)=> {
-    router.push(baseUrl + url)
+    router.push(url)
   }
   const category = product.categoria.charAt(0).toUpperCase() + product.categoria.slice(1)
   return (

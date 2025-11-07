@@ -27,45 +27,43 @@ const ProductDetail = async ({params})=> {
   }
   
   return (
-    <main className="p-6 max-w-[1200px] mx-auto">
+    <main className="p-3 lg:p-6 max-w-[1200px] mx-auto">
       <section>
-        <div className="text-[#616161] flex items-center h-[24px]">
+        <div className="text-[#616161] flex items-center h-[24px] text-xs lg:text-base">
           <Link href={"/productos"} className="font-medium">Productos</Link>
           <img src={chevron.src} alt="chevron icon" className="inline-block"/>
           <p className="text-black font-semibold">{product.nombre}</p>
         </div>
 
-        <div className="flex items-center gap-12 mt-6">
+        <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-12 mt-3 lg:mt-6">
           <div>
-            <Image src={product.imagen} alt="image-product" priority width={700} height={400} className="min-w-[400px] h-auto max-h-[450px] object-cover"/>
+            <Image src={product.imagen} alt="image-product" priority width={700} height={400} className="max-w-[250px] max-h-auto lg:min-w-[400px] h-auto lg:max-h-[450px] object-cover"/>
           </div>
           <div>
             <div className="flex items-center gap-3">
-              <h2 className="text-3xl font-semibold">{product.nombre}</h2>
-              <p className="bg-[#508f82] text-white font-medium px-2 rounded-lg">{handleWord(product.categoria)}</p>
+              <h2 className="text-lg lg:text-3xl font-semibold">{product.nombre}</h2>
+              <p className="bg-[#508f82] text-sm lg:text-base text-white font-medium px-2 rounded-lg">{handleWord(product.categoria)}</p>
             </div>
-            <p className="text-lg">{product.descripcion}</p>
+            <p className="text-sm lg:text-lg">{product.descripcion}</p>
       
-            <div className="flex gap-2 items-center mt-3">
-              <p className="font-medi[0.98]">{product.reseñas.promedio}</p>
-              <StarRating rating={product.reseñas.promedio} />
+            <div className="flex gap-2 items-center mt-1 lg:mt-3">
+              <p className="text-sm lg:text-base">{product.reseñas.promedio}</p>
+              <StarRating rating={product.reseñas.promedio}/>
             </div>
-            <p className="mt-2 text-[#616161]"><b className="text-[#508f82]">{product.reseñas.totalReseñas}</b> personas dieron una reseña a este producto</p>
+            <p className="mt-2 text-[#616161] text-sm lg:text-base"><b className="text-[#508f82]">{product.reseñas.totalReseñas}</b> personas dieron una reseña a este producto</p>
             
-            <p className={`text-3xl mt-2 font-medium ${product.precioFinal != undefined ? "hidden" : null}`}>{`$ ${numberFormat(product.precio)}`}</p>        
-            <div className={product.precioFinal == undefined ? "hidden" : "mt-6"}>
-              <p className="line-through font-medium text-[#616161]">{`$ ${numberFormat(product.precio)}`}</p>
-              <div className="flex items-center gap-2 flex-wrap-reverse">
-                <p className="text-3xl font-medium">{`$ ${numberFormat(product.precioFinal)}`}</p>
-                <p className="text-[#508f82] text-lg font-semibold">{`${product.descuento}% OFF`}</p>
-              </div>
+            <p className={`text-xl lg:text-3xl mt-2 font-medium ${product.precioFinal != undefined ? "hidden" : null}`}>{`$ ${numberFormat(product.precio)}`}</p>        
+            <div className={product.precioFinal == undefined ? "hidden" : "mt-3 lg:mt-6"}>
+              <p className="line-through text-sm lg:text-base font-medium text-[#616161] inline-block">{`$ ${numberFormat(product.precio)}`}</p>
+              <p className="text-[#508f82] text-sm lg:text-lg pl-2 lg:pl-3 font-semibold inline-block">{`${product.descuento}% OFF`}</p>
+              <p className="text-xl lg:text-3xl font-medium">{`$ ${numberFormat(product.precioFinal)}`}</p>
             </div>
 
-            <div className="flex flex-col gap-2 mt-6">
-              <button className="bg-[#508f82] w-full border-1 text-white font-medium py-2 px-3 rounded-xl cursor-pointer hover:scale-[0.98] transition-all">
+            <div className="flex flex-col gap-1 lg:gap-2 mt-3 lg:mt-6">
+              <button className="bg-[#508f82] text-xs lg:text-base w-full border-1 text-white font-medium py-1.5 lg:py-2 px-3 rounded-xl cursor-pointer hover:scale-[0.98] transition-all">
                 Comprar ahora
               </button>
-              <button className="border-1 border-[#508f82] w-full text-[#508f82] font-medium py-2 px-3 rounded-xl cursor-pointer hover:scale-[0.98] transition-all">
+              <button className="border-1 border-[#508f82] text-xs lg:text-base w-full text-[#508f82] font-medium py-1.5 lg:py-2 px-3 rounded-xl cursor-pointer hover:scale-[0.98] transition-all">
                 Agregar al carrito
               </button>
             </div>
@@ -74,13 +72,13 @@ const ProductDetail = async ({params})=> {
       </section>
 
       <section>
-        <article className="mt-12">
-          <h3 className="text-2xl font-medium">Especificaciones</h3>
-            <div className="grid grid-cols-2 mt-6">
+        <article className="mt-6 lg:mt-12">
+          <h3 className="text-lg lg:text-2xl font-medium">Especificaciones</h3>
+            <div className="grid grid-cols-2 mt-2 lg:mt-6">
               {
                 specs.map(s => {
                   return (
-                    <div key={s[0]} className="py-1.5">
+                    <div key={s[0]} className="py-1.5 text-sm lg:text-base">
                       <b>{handleWord(s[0])}</b>
                       <p className="border-b-1 border-[#c2c2c2] pb-3">{s[1]}</p>
                     </div>
@@ -90,15 +88,15 @@ const ProductDetail = async ({params})=> {
             </div>
         </article>
 
-        <article className="mt-12">
-          <h3 className="text-2xl font-medium">Reseñas de clientes</h3>
-          <div className="flex my-6 gap-12">
-            <div className="flex justify-center flex-col items-center basis-[25%]">
-              <p className="text-5xl font-semibold pb-2">{product.reseñas.promedio}</p>
+        <article className="mt-6 lg:mt-12">
+          <h3 className="text-lg lg:text-2xl font-medium">Reseñas de clientes</h3>
+          <div className="flex flex-col lg:flex-row my-3 lg:my-6 gap-6 lg:gap-12">
+            <div className="flex justify-center flex-col items-center lg:basis-[25%]">
+              <p className="text-3xl lg:text-5xl font-semibold lg:pb-2">{product.reseñas.promedio}</p>
               <StarRating rating={product.reseñas.promedio} />
-              <p className="mt-2 text-[#616161]">Basado en <b className="text-[#508f82]">{product.reseñas.totalReseñas}</b> reseñas</p>
+              <p className="lg:mt-2 text-[#616161] text-sm lg:text-base">Basado en <b className="text-[#508f82]">{product.reseñas.totalReseñas}</b> reseñas</p>
             </div>
-            <div className="basis-[75%]">
+            <div className="lg:basis-[75%]">
               {
                 stars.map(s => {
                   return (
@@ -109,7 +107,7 @@ const ProductDetail = async ({params})=> {
             </div>
           </div>
 
-          <div className="pt-3">
+          <div className="lg:pt-3">
             {comments.map(comment => {
               return (
                 <Comment key={comment.usuario} comment={comment} />

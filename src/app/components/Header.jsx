@@ -16,7 +16,6 @@ const Header = () => {
   } else {
     currentFullPath = "productos"
   }
-  console.log(currentFullPath)
 
   return (
     <header className="min-h-[70px] p-2 flex flex-col gap-2 items-center w-full px-3 lg:px-6 text-lg">

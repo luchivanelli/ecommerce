@@ -12,28 +12,30 @@ const Comment = ({comment})=> {
         <img 
           src={comment.avatar} 
           alt="avatar" 
-          className="rounded-full w-12"
+          className="rounded-full w-9 lg:w-12"
           onError={(e) => {
             e.currentTarget.onerror = null // evita bucles infinitos
             e.currentTarget.src = defaultAvatar.src // asigna la imagen local
           }}
         />
-        <div className="space-y-1">
-          <p className="font-medium">{comment.usuario}</p>
-          <StarRating rating={comment.estrellas} size={13}/>
+        <div>
+          <p className="font-medium text-sm lg:text-base">{comment.usuario}</p>
+          <StarRating rating={comment.estrellas} className="w-[14px]"/>
         </div>
       </div>
 
-      <p className="text-[#616161] my-3">{comment.comentario}</p>
+      <p className="text-[#616161] my-1 lg:my-3 text-sm lg:text-base">{comment.comentario}</p>
 
-      <div className="text-[#616161] text-sm flex gap-6">
+      <div className="text-[#616161] text-xs lg:text-sm flex gap-6">
         <p>{dateFormat(comment.fecha)}</p>
         <div className="flex items-center gap-1">
-          <ThumbsUp color="#616161" size={16}/>
+          <ThumbsUp color="#616161" size={16} className="hidden lg:inline-block"/>
+          <ThumbsUp color="#616161" size={12} className="lg:hidden inline-block"/>
           <p>{comment.likes}</p>
         </div>
         <div className="flex items-center gap-1">
-          <ThumbsDown color="#616161" size={16}/>
+          <ThumbsDown color="#616161" size={16} className="hidden lg:inline-block"/>
+          <ThumbsDown color="#616161" size={12} className="lg:hidden inline-block"/>
           <p>{comment.dislikes}</p>
         </div>
       </div>
