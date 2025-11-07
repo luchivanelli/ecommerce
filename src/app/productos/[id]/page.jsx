@@ -1,7 +1,7 @@
 import Comment from "@/app/components/Comment";
 import Progress from "@/app/components/Progress";
 import StarRating from "@/app/components/StarRating";
-import { baseUrl, numberFormat } from "@/app/utils/utils";
+import { numberFormat } from "@/app/utils/utils";
 import chevron from "@/public/chevron.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,8 +9,7 @@ import Link from "next/link";
 const ProductDetail = async ({params})=> {
   const {id} = await params
 
-  const res = await fetch(`${baseUrl}/data/products.json`);
-  const products = await res.json();
+  const products = await import('@/public/data/products.json');
 
   // Buscar el producto correspondiente
   const product = products.productos.find(p => p.id.toString() === id);

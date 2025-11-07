@@ -4,12 +4,10 @@ import CardCategory from "./components/CardCategory";
 import CardProduct from "./components/CardProduct";
 import { categories } from "./utils/utils";
 import Footer from "./components/Footer";
-import { baseUrl } from "./utils/utils";
 import Link from "next/link";
 
 const Home = async () => {
-  const res = await fetch(`${baseUrl}/data/products.json`);
-  const products = await res.json();
+  const products = await import('@/public/data/products.json');
 
   const featuredProducts = products.productos.filter(product => product.reseñas.totalReseñas > 120)
 

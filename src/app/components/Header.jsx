@@ -8,7 +8,15 @@ import { usePathname, useSearchParams } from "next/navigation";
 const Header = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const currentFullPath = searchParams.size > 0 ? (pathname + "?" + searchParams.toString()) : pathname
+  let currentFullPath = ""
+  if (searchParams.getAll("categoria").includes("ofertas")) {
+    currentFullPath = "ofertas"
+  } else if (pathname == "/") {
+    currentFullPath = "inicio"
+  } else {
+    currentFullPath = "productos"
+  }
+  console.log(currentFullPath)
 
   return (
     <header className="min-h-[70px] p-2 flex flex-col gap-2 items-center w-full px-3 lg:px-6 text-lg">
@@ -21,9 +29,9 @@ const Header = () => {
           </div>
 
           <div className="gap-5 hidden lg:flex">
-            <Link href={"/"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "/" ? "text-[#508f82] underline underline-offset-2" : null}`}>Inicio</Link>
-            <Link href={"/productos"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "/productos" ? "text-[#508f82] underline underline-offset-2" : null}`}>Productos</Link>
-            <Link href={"/productos?categoria=ofertas"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "/productos?categoria=ofertas" ? "text-[#508f82] underline underline-offset-2" : null}`}>Ofertas</Link>
+            <Link href={"/"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "inicio" ? "text-[#508f82] underline underline-offset-2" : null}`}>Inicio</Link>
+            <Link href={"/productos"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "productos" ? "text-[#508f82] underline underline-offset-2" : null}`}>Productos</Link>
+            <Link href={"/productos?categoria=ofertas"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "ofertas" ? "text-[#508f82] underline underline-offset-2" : null}`}>Ofertas</Link>
           </div>
         </div>
         <div className="flex justify-end items-center w-full gap-2">
@@ -43,9 +51,9 @@ const Header = () => {
       {/* header mobile */}
       <div className="flex justify-between items-center w-full lg:hidden">
         <div className="gap-3 flex text-sm">
-          <Link href={"/"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "/" ? "text-[#508f82] underline underline-offset-2" : null}`}>Inicio</Link>
-            <Link href={"/productos"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "/productos" ? "text-[#508f82] underline underline-offset-2" : null}`}>Productos</Link>
-            <Link href={"/productos?categoria=ofertas"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "/productos?categoria=ofertas" ? "text-[#508f82] underline underline-offset-2" : null}`}>Ofertas</Link>
+          <Link href={"/"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "inicio" ? "text-[#508f82] underline underline-offset-2" : null}`}>Inicio</Link>
+          <Link href={"/productos"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "productos" ? "text-[#508f82] underline underline-offset-2" : null}`}>Productos</Link>
+          <Link href={"/productos?categoria=ofertas"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "ofertas" ? "text-[#508f82] underline underline-offset-2" : null}`}>Ofertas</Link>
         </div>
         <button className="gap-2 font-medium h-full py-1 px-3 rounded-xl cursor-pointer hover:scale-95 transition-all">
           <ShoppingCart color="#508f82" size={18} strokeWidth={3}/>

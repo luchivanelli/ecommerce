@@ -1,14 +1,12 @@
 import CardProduct from "../components/CardProduct";
 import Filters from "../components/Filters";
 import Pagination from "../components/Pagination";
-import { baseUrl } from "../utils/utils";
 
 const ProductsPage = async ({ searchParams }) => {
   //esperar los searchParams
   const params = await searchParams;
   
-  const res = await fetch(`${baseUrl}/data/products.json`);
-  const products = await res.json();
+  const products = await import('@/public/data/products.json');
 
   // Función para filtrar productos según los parámetros
   const filterProducts = (products, params) => {
