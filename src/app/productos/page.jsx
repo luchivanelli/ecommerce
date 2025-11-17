@@ -1,6 +1,7 @@
 import CardProduct from "../components/CardProduct";
 import Filters from "../components/Filters";
 import Pagination from "../components/Pagination";
+import { Toaster } from 'sonner'
 
 const ProductsPage = async ({ searchParams }) => {
   //esperar los searchParams
@@ -66,7 +67,7 @@ const ProductsPage = async ({ searchParams }) => {
   const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
 
   return (
-    <div className="flex flex-col lg:flex-row lg:py-6 overflow-hidden">
+    <div className="flex flex-col lg:flex-row lg:py-2 overflow-hidden">
       <Filters />
       <main id="main-products" className="basis-[80%] overflow-auto h-[calc(100vh-120px)]">
         <div className="flex my-4 lg:my-0 px-3 lg:p-0 flex-wrap gap-3 lg:gap-6">
@@ -86,6 +87,14 @@ const ProductsPage = async ({ searchParams }) => {
           />
         )}
       </main>
+      <Toaster richColors
+        toastOptions={{
+          className: "p-2 max-w-[300px] lg:max-w-[400px]",
+          titleClassName: "text-sm lg:text-base",
+          descriptionClassName: "text-xs lg:text-base",
+          actionClassName: "text-base"
+        }}
+      />
     </div>
   );
 };

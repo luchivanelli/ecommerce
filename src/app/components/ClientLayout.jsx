@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { CartProvider } from "../providers/CartProvider";
 import Header from "./Header";
 import Loader from "./Loader";
 import { gsap } from "gsap";
@@ -37,9 +38,9 @@ export default function ClientLayout({ children }) {
   if (showLoader) return <Loader />; // se mantiene visible mientras se anima
 
   return (
-    <div>
+    <CartProvider>
       <Header />
       {children}
-    </div>
+    </CartProvider>
   );
 }

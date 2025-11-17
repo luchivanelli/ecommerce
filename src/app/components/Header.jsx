@@ -1,9 +1,9 @@
 import logo from "@/public/logo.webp"
-import search from "@/public/search.svg"
 import Image from "next/image"
 import Link from "next/link"
-import { ShoppingCart } from 'lucide-react';
 import { usePathname, useSearchParams } from "next/navigation";
+import Searcher from "./Searcher";
+import ButtonCart from "./ButtonCart";
 
 const Header = () => {
   const pathname = usePathname();
@@ -13,7 +13,7 @@ const Header = () => {
     currentFullPath = "ofertas"
   } else if (pathname == "/") {
     currentFullPath = "inicio"
-  } else {
+  } else if (pathname == "/productos") {
     currentFullPath = "productos"
   }
 
@@ -34,16 +34,8 @@ const Header = () => {
           </div>
         </div>
         <div className="flex justify-end items-center w-full gap-2">
-          <div className="relative flex items-center">
-            <input 
-              type="text" 
-              placeholder="Buscar..."
-              className="border-1 border-[#9b9b9b] rounded-xl pl-6 lg:pl-7 h-[26px] lg:h-[36px] pr-1 outline-0 text-sm lg:text-base w-[180px] lg:w-[250px]"/>
-            <img src={search.src} alt="search" className="absolute left-1 w-4 lg:w-5"/>
-          </div>
-          <button className="gap-2 font-medium h-full py-1 px-3 rounded-xl cursor-pointer hover:scale-95 transition-all hidden lg:inline-block">
-            <ShoppingCart color="#508f82" size={24} strokeWidth={3}/>
-          </button>
+          <Searcher />
+          <ButtonCart className={"hidden lg:inline-block"} size={24}/>
         </div>
       </div>
 
@@ -54,9 +46,7 @@ const Header = () => {
           <Link href={"/productos"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "productos" ? "text-[#508f82] underline underline-offset-2" : null}`}>Productos</Link>
           <Link href={"/productos?categoria=ofertas"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "ofertas" ? "text-[#508f82] underline underline-offset-2" : null}`}>Ofertas</Link>
         </div>
-        <button className="gap-2 font-medium h-full py-1 px-3 rounded-xl cursor-pointer hover:scale-95 transition-all">
-          <ShoppingCart color="#508f82" size={18} strokeWidth={3}/>
-        </button>
+        <ButtonCart className={"lg:hidden inline-block"} size={18}/>
       </div>
 
     </header>

@@ -1,3 +1,4 @@
+import CardProduct from "@/app/components/CardProduct";
 import Comment from "@/app/components/Comment";
 import Progress from "@/app/components/Progress";
 import StarRating from "@/app/components/StarRating";
@@ -13,8 +14,12 @@ const ProductDetail = async ({params})=> {
 
   // Buscar el producto correspondiente
   const product = products.productos.find(p => p.id.toString() === id);
+
   const specs = Object.entries(product.especificaciones)
   const comments = product.reseñas.comentarios
+
+  let relatedProducts = products.productos.filter(p => p.categoria == product.categoria && p.id != product.id)
+  relatedProducts = relatedProducts.slice(0, 4)
 
   //convertimos el objeto "estrellas" en un array y modificamos el primer valor
   const stars = Object.entries(product.reseñas.distribucion)
@@ -111,6 +116,17 @@ const ProductDetail = async ({params})=> {
             {comments.map(comment => {
               return (
                 <Comment key={comment.usuario} comment={comment} />
+              )
+            })}
+          </div>
+        </article>
+
+        <article className="w-full mt-6 lg:mt-12">
+          <h3 className="text-lg lg:text-2xl font-medium">Productos relacionados</h3>
+          <div className="flex justify-between gap-3 lg:gap-6 py-6">
+            {relatedProducts.map(p => {
+              return (
+                <CardProduct key={p.id} product={p}/>
               )
             })}
           </div>

@@ -2,6 +2,7 @@
 import Image from "next/image"
 import { numberFormat } from "../utils/utils"
 import { useRouter } from "next/navigation";
+import ButtonAddCart from "./ButtonAddCart";
 
 const CardProduct = ({ product }) => {
   const router = useRouter()
@@ -33,9 +34,7 @@ const CardProduct = ({ product }) => {
           <button className="text-xs lg:text-sm lg-text-base bg-[#508f82] w-full border-1 text-white font-medium py-1 lg:py-1.5 px-1 lg:px-3 rounded-xl cursor-pointer hover:scale-95 transition-all">
             Comprar ahora
           </button>
-          <button className="text-xs lg:text-sm lg-text-base border-1 border-[#508f82] w-full text-[#508f82] font-medium py-1 lg:py-1.5 px-1 lg:px-3 rounded-xl cursor-pointer hover:scale-95 transition-all">
-            Agregar al carrito
-          </button>
+          <ButtonAddCart product={product}/>
         </div>
       </div>
     </div>
