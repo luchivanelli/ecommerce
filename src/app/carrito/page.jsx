@@ -5,8 +5,10 @@ import { CartContext } from "../providers/CartProvider"
 import Image from "next/image"
 import { numberFormat } from "../utils/utils"
 import { CirclePlus, CircleMinus, Trash2 } from 'lucide-react';
+import { useRouter } from "next/navigation"
 
 const CartPage = ()=> {
+  const router = useRouter()
   const {cart, removeFromCart, updateQuantity} = useContext(CartContext)
 
   const subtotal = cart.reduce((acc, product) => {
@@ -27,7 +29,7 @@ const CartPage = ()=> {
         <div className="lg:pt-3">
           {cart.map(product => {
             return (
-              <article key={product.id} className="flex flex-row justify-between items-center my-3 border-1 border-[#508f8281] bg-[#508f821e] rounded-xl h-auto lg:h-[120px] relative">
+              <article key={product.id} className="shadow-md flex flex-row justify-between items-center my-3 border-1 border-[#508f8281] bg-[#508f821e] rounded-xl h-auto lg:h-[120px] relative">
                 <section className="flex items-center gap-3 lg:gap-6 mx-3">
                   <Image src={product.imagen} height={100} width={100} alt="Image" className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] object-contain my-3 rounded-xl border-1 border-[#508f8281] bg-white"/>
                   <div>
@@ -62,7 +64,7 @@ const CartPage = ()=> {
         </div>
       </main>
       <aside className={`basis-[30%] py-3 ${cart.length == 0 ? "hidden" : null}`}>
-        <section className="border-1 border-[#508f8281] bg-[#508f821e] rounded-xl p-3 lg:p-6 space-y-1 lg:space-y-3">
+        <section className="shadow-md border-1 border-[#508f8281] bg-[#508f821e] rounded-xl p-3 lg:p-6 space-y-1 lg:space-y-3">
           <h3 className="font-semibold text-xl lg:text-2xl">Resumen del pedido</h3>
           <div className="flex items-center justify-between gap-3 text-sm lg:text-base">
             <p className="text-[#616161] font-medium">Subtotal</p>
@@ -80,7 +82,7 @@ const CartPage = ()=> {
             <p className="font-semibold text-lg lg:text-xl">Total</p>
             <p className="font-semibold text-lg lg:text-xl">{`$ ${numberFormat(taxes + subtotal)}`}</p>
           </div>
-          <button className="py-2 lg:py-3 text-sm lg:text-base w-full rounded-xl bg-[#508f82] text-white mt-1 lg:mt-3 cursor-pointer hover:scale-[99%] transition-all">Continuar con el pago</button>
+          <button onClick={()=> router.push("/checkout")} className="py-2 lg:py-3 text-sm lg:text-base w-full rounded-xl bg-[#508f82] text-white mt-1 lg:mt-3 cursor-pointer hover:scale-[99%] transition-all">Continuar con el pago</button>
         </section>
       </aside>
     </div>

@@ -69,7 +69,7 @@ const ProductsPage = async ({ searchParams }) => {
   return (
     <div className="flex flex-col lg:flex-row lg:py-2 overflow-hidden">
       <Filters />
-      <main id="main-products" className="basis-[80%] overflow-auto h-[calc(100vh-120px)]">
+      <main id="main-products" className="basis-[80%] overflow-auto h-[calc(100vh-120px)] py-3">
         <div className="flex my-4 lg:my-0 px-3 lg:p-0 flex-wrap gap-3 lg:gap-6">
           {paginatedProducts.length > 0 ? (
             paginatedProducts.map(product => <CardProduct key={product.nombre} product={product} />)

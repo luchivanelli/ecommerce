@@ -5,7 +5,7 @@ import { createContext, useContext, useState, useEffect } from 'react'
 export const CartContext = createContext()
 
 export const CartProvider = ({ children }) => {
-  // Cargar carrito del localStorage al iniciar
+  // Cargamos carrito del localStorage al iniciar
    const [cart, setCart] = useState(() => {
     if (typeof window !== 'undefined') {
       const savedCart = localStorage.getItem('cart')
@@ -14,7 +14,7 @@ export const CartProvider = ({ children }) => {
     return []
   })
 
-  // Solo guardar cuando cambie (no en el primer render)
+  // Guardamos en localStorage los datos del carrito cada vez que cambie su valor
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart))
   }, [cart])

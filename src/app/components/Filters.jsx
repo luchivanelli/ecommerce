@@ -44,8 +44,8 @@ const Filters = () => {
 
   return (
     <aside className="basis-[20%] min-w-[320px] px-3 lg:px-6">
-      <div className="shadow-md rounded-xl shadow-[#0000005b] p-3 lg:p-6 bg-[#508f82]">
-        <h2 className="text-white text-lg lg:text-2xl font-medium lg:mb-4">Filtros</h2>
+      <div className="shadow-md rounded-xl p-3 lg:p-6 bg-[#508f821e] border-1 border-[#508f8281]">
+        <h2 className=" text-lg lg:text-2xl font-medium lg:mb-4">Filtros</h2>
         <div className="mt-2">
           <h3 className="lg:text-lg font-medium">Marca</h3>
           <div className="flex flex-wrap gap-x-4 gap-y-1">
@@ -62,10 +62,10 @@ const Filters = () => {
         <div className="mt-2">
           <h3 className="lg:text-lg font-medium">Precio</h3>
           <div className="flex flex-wrap gap-x-4 gap-y-1">
-            <p onClick={()=> handleFilter("precio", "menor")} className={`text-white cursor-pointer text-sm lg:text-base ${selectedPrice === "menor" ? "underline underline-offset-2" : null}`}>Hasta $1.500.000</p>
-            <p onClick={()=> handleFilter("precio", "medio")} className={`text-white cursor-pointer text-sm lg:text-base ${selectedPrice === "medio" ? "underline underline-offset-2" : null}`}>De $1.500.000 a $3.000.000</p>
-            <p onClick={()=> handleFilter("precio", "mayor")} className={`text-white cursor-pointer text-sm lg:text-base ${selectedPrice === "mayor" ? "underline underline-offset-2" : null}`}>Más de $3.000.000</p>
-            <p onClick={()=> handleFilter("precio", "all")} className="text-white cursor-pointer text-sm lg:text-base">Mostrar todos</p>
+            <p onClick={()=> handleFilter("precio", "menor")} className={` cursor-pointer text-sm lg:text-base ${selectedPrice === "menor" ? "underline underline-offset-2" : null}`}>Hasta $1.500.000</p>
+            <p onClick={()=> handleFilter("precio", "medio")} className={` cursor-pointer text-sm lg:text-base ${selectedPrice === "medio" ? "underline underline-offset-2" : null}`}>De $1.500.000 a $3.000.000</p>
+            <p onClick={()=> handleFilter("precio", "mayor")} className={` cursor-pointer text-sm lg:text-base ${selectedPrice === "mayor" ? "underline underline-offset-2" : null}`}>Más de $3.000.000</p>
+            <p onClick={()=> handleFilter("precio", "all")} className=" cursor-pointer text-sm lg:text-base">Mostrar todos</p>
           </div>
         </div>
 
