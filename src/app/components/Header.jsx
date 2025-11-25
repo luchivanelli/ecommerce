@@ -22,10 +22,10 @@ const Header = () => {
       {/* header desktop */}
       <div className="flex justify-between w-full">
         <div className="flex gap-16 items-center w-full">
-          <div className="flex items-center p-0">
+          <a href="/" className="flex items-center p-0">
             <Image src={logo} alt="logo" className="object-contain h-[34px] w-[34px] lg:h-[60px] lg:w-[60px]"/>
             <p className="font-bold text-[#508f82] text-xl lg:text-[26px]">LapTech</p>
-          </div>
+          </a>
 
           <div className="gap-5 hidden lg:flex">
             <Link href={"/"} className={`hover:text-[#508f82] font-medium ${currentFullPath == "inicio" ? "text-[#508f82] underline underline-offset-2" : null}`}>Inicio</Link>

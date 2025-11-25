@@ -1,6 +1,6 @@
 "use client"
 
-import { createContext, useContext, useState, useEffect } from 'react'
+import { createContext, useState, useEffect } from 'react'
 
 export const CartContext = createContext()
 
@@ -13,6 +13,8 @@ export const CartProvider = ({ children }) => {
     }
     return []
   })
+
+  const [buyNowProduct, setBuyNowProduct] = useState(null);
 
   // Guardamos en localStorage los datos del carrito cada vez que cambie su valor
   useEffect(() => {
@@ -60,7 +62,9 @@ export const CartProvider = ({ children }) => {
       removeFromCart,
       updateQuantity,
       clearCart,
-      itemCount
+      itemCount,
+      buyNowProduct,
+      setBuyNowProduct
     }}>
       {children}
     </CartContext.Provider>

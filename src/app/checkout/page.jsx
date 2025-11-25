@@ -5,6 +5,11 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Info } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import { useContext } from 'react';
+import { CartContext } from '../providers/CartProvider';
+import { numberFormat } from '../utils/utils';
+import { CirclePlus, CircleMinus, Trash2 } from 'lucide-react';
+import Image from 'next/image';
 
 // Define el esquema de validación
 const checkoutSchema = z.object({
@@ -49,10 +54,10 @@ const checkoutSchema = z.object({
       });
     }
     
-    if (!data.cvv || data.cvv.length < 3) {
+    if (!data.cvv || data.cvv.length !== 3) {
       ctx.addIssue({
         code: "custom",
-        message: 'El CVV debe tener al menos 3 dígitos',
+        message: 'El CVV debe tener 3 dígitos',
         path: ['cvv'],
       });
     }
@@ -60,6 +65,7 @@ const checkoutSchema = z.object({
 });
 
 const CheckoutPage = ()=> {
+  const {clearCart, cart, buyNowProduct, setBuyNowProduct} = useContext(CartContext)
   const router = useRouter()
 
   const { register, handleSubmit, watch, formState: { errors } } = useForm({
@@ -71,11 +77,21 @@ const CheckoutPage = ()=> {
 
   const paymentMethod = watch('paymentMethod');
 
+  const productsToShow = buyNowProduct
+  ? [buyNowProduct]     // si existe buyNowProduct = checkout rápido
+  : cart;               // si no existe = checkout normal
+
   const onSubmit = (data) => {
     if (data.cardNumber.slice(-1) == 0 && data.paymentMethod == "credit-debit-card") {
       router.push("/checkout/error")
     } else {
       router.push("/checkout/exito")
+
+      if (!buyNowProduct) {
+        clearCart()
+      }
+
+      setBuyNowProduct(null)
     }
   };
 
@@ -86,6 +102,26 @@ const CheckoutPage = ()=> {
       <p className='text-sm lg:text-base'><b>No ingreses datos reales</b>, especialmente información sensible como tu dirección exacta, número de tarjeta o documentos personales.</p>
       <p className='text-sm lg:text-base'>Utilizá <b>datos ficticios</b> para probar el funcionamiento del sistema.</p>
       
+      <h3 className="col-span-2 text-xl font-medium mt-6 pb-3 border-b-1 border-[#508f8281]">Detalle de compra</h3>
+      <div className="lg:pt-3">
+        {productsToShow.map(product => {
+          return (
+            <article key={product.id} className="shadow-md flex flex-row justify-between items-center my-3 border-1 border-[#508f8281] bg-[#508f821e] rounded-xl h-auto lg:h-[80px] relative">
+              <section className="flex items-center gap-3 lg:gap-6 mx-2 lg:mx-3">
+                <Image src={product.imagen} height={100} width={100} alt="Image" className="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] object-contain my-2 lg:my-3 rounded-xl border-1 border-[#508f8281] bg-white"/>
+                <div>
+                  <h3 className="font-semibold text-sm lg:text-lg leading-4">{product.nombre}</h3>
+                  <p className='font-semibold text-xs lg:text-base'>x{product.quantity}</p>
+                </div>
+              </section>
+              <section className="flex flex-col-reverse md:flex-row items-end md:items-center md:gap-4 lg:gap-6 mx-3 lg:mx-6">
+                <p className="text-base lg:text-xl font-medium w-[110px] lg:w-[130px] text-end">{`$ ${numberFormat(product.precioFinal ? product.precioFinal * product.quantity : product.precio * product.quantity)}`}</p>
+              </section>
+            </article>
+          )
+        })}
+      </div>
+
       <form onSubmit={handleSubmit(onSubmit)} className="mb-6 gap-3 lg:gap-6 grid grid-cols-2 text-sm lg:text-base">
         <h3 className="col-span-2 text-xl font-medium mt-6 pb-3 border-b-1 border-[#508f8281]">Información de compra</h3>
         <div className="col-span-2">
@@ -138,15 +174,15 @@ const CheckoutPage = ()=> {
         </div>
 
         <div className="flex flex-col gap-3 col-span-2">
-          <div className="shadow-md bg-[#508f821e] mt-1 border-1 border-[#508f8281] rounded-md block w-full px-2 py-1 lg:py-1.5">
+          <div className="shadow-md bg-[#508f821e] mt-1 border-1 border-[#508f8281] rounded-md w-full px-2 py-1 lg:py-1.5 flex items-center">
             <input {...register('paymentMethod')} type="radio" value="credit-debit-card" id="credit-debit-card" className="m-3"/>
             <label htmlFor="credit-debit-card" className="cursor-pointer">Tarjeta de crédito / débito</label>
           </div>
-          <div className="shadow-md bg-[#508f821e] mt-1 border-1 border-[#508f8281] rounded-md block w-full px-2 py-1 lg:py-1.5">
+          <div className="shadow-md bg-[#508f821e] mt-1 border-1 border-[#508f8281] rounded-md w-full px-2 py-1 lg:py-1.5 flex items-center">
             <input {...register('paymentMethod')} type="radio" value="paypal" id="paypal" className="m-3"/>
             <label htmlFor="paypal" className="cursor-pointer">Paypal</label>
           </div>
-          <div className="shadow-md bg-[#508f821e] mt-1 border-1 border-[#508f8281] rounded-md block w-full px-2 py-1 lg:py-1.5">
+          <div className="shadow-md bg-[#508f821e] mt-1 border-1 border-[#508f8281] rounded-md w-full px-2 py-1 lg:py-1.5 flex items-center">
             <input {...register('paymentMethod')} type="radio" value="bank-transfer" id="bank-transfer" className="m-3"/>
             <label htmlFor="bank-transfer" className="cursor-pointer">Transferencia bancaria</label>
           </div>

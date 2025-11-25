@@ -5,6 +5,7 @@ import CardProduct from "./components/CardProduct";
 import { categories } from "./utils/utils";
 import Footer from "./components/Footer";
 import Link from "next/link";
+import { Toaster } from "sonner";
 
 const Home = async () => {
   const products = await import('@/public/data/products.json');
@@ -50,6 +51,14 @@ const Home = async () => {
           })}
         </div>
       </section>
+      <Toaster richColors
+        toastOptions={{
+          className: "p-2 max-w-[300px] lg:max-w-[400px]",
+          titleClassName: "text-sm lg:text-base",
+          descriptionClassName: "text-xs lg:text-base",
+          actionClassName: "text-base"
+        }}
+      />
       <Footer />
     </main>
 )};

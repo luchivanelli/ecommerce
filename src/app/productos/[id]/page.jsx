@@ -6,10 +6,12 @@ import { numberFormat } from "@/app/utils/utils";
 import chevron from "@/public/chevron.svg";
 import Image from "next/image";
 import Link from "next/link";
+import ButtonAddCart from "@/app/components/ButtonAddCart";
+import { Toaster } from "sonner";
+import ButtonBuyNow from "@/app/components/ButtonBuyNow";
 
 const ProductDetail = async ({params})=> {
   const {id} = await params
-
   const products = await import('@/public/data/products.json');
 
   // Buscar el producto correspondiente
@@ -65,12 +67,8 @@ const ProductDetail = async ({params})=> {
             </div>
 
             <div className="flex flex-col gap-1 lg:gap-2 mt-3 lg:mt-6">
-              <button className="bg-[#508f82] text-xs lg:text-base w-full border-1 text-white font-medium py-1.5 lg:py-2 px-3 rounded-xl cursor-pointer hover:scale-[0.98] transition-all">
-                Comprar ahora
-              </button>
-              <button className="border-1 border-[#508f82] text-xs lg:text-base w-full text-[#508f82] font-medium py-1.5 lg:py-2 px-3 rounded-xl cursor-pointer hover:scale-[0.98] transition-all">
-                Agregar al carrito
-              </button>
+              <ButtonBuyNow product={product} className="py-2 px-3"/>
+              <ButtonAddCart product={product} className="py-2 px-3"/>
             </div>
           </div>
         </div>
@@ -123,7 +121,7 @@ const ProductDetail = async ({params})=> {
 
         <article className="w-full mt-6 lg:mt-12">
           <h3 className="text-lg lg:text-2xl font-medium">Productos relacionados</h3>
-          <div className="flex justify-between gap-3 lg:gap-6 py-6">
+          <div className="flex flex-wrap justify-between gap-3 lg:gap-6 py-6">
             {relatedProducts.map(p => {
               return (
                 <CardProduct key={p.id} product={p}/>
@@ -132,6 +130,14 @@ const ProductDetail = async ({params})=> {
           </div>
         </article>
       </section>
+      <Toaster richColors
+        toastOptions={{
+          className: "p-2 max-w-[300px] lg:max-w-[400px]",
+          titleClassName: "text-sm lg:text-base",
+          descriptionClassName: "text-xs lg:text-base",
+          actionClassName: "text-base"
+        }}
+      />
     </main>
   )
 }

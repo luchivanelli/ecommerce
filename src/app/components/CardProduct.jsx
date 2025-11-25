@@ -3,6 +3,7 @@ import Image from "next/image"
 import { numberFormat } from "../utils/utils"
 import { useRouter } from "next/navigation";
 import ButtonAddCart from "./ButtonAddCart";
+import ButtonBuyNow from "./ButtonBuyNow";
 
 const CardProduct = ({ product }) => {
   const router = useRouter()
@@ -31,9 +32,7 @@ const CardProduct = ({ product }) => {
 
         <p className="lg:mt-2 text-[#616161] text-xs lg:text-sm"><b className="text-[#508f82]">{product.reseñas.totalReseñas}</b> personas dieron una reseña a este producto</p>
         <div className="flex flex-col gap-1 lg:gap-2 mt-3">
-          <button onClick={()=> router.push("/checkout")} className="text-xs lg:text-sm lg-text-base bg-[#508f82] w-full border-1 text-white font-medium py-1 lg:py-1.5 px-1 lg:px-3 rounded-xl cursor-pointer hover:scale-95 transition-all">
-            Comprar ahora
-          </button>
+          <ButtonBuyNow product={product}/>
           <ButtonAddCart product={product}/>
         </div>
       </div>

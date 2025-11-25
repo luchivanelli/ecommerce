@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation"
 
 const CartPage = ()=> {
   const router = useRouter()
-  const {cart, removeFromCart, updateQuantity} = useContext(CartContext)
+  const {cart, removeFromCart, updateQuantity, setBuyNowProduct} = useContext(CartContext)
 
   const subtotal = cart.reduce((acc, product) => {
     if (product.precioFinal) {
@@ -21,11 +21,16 @@ const CartPage = ()=> {
 
   const taxes = Math.round(subtotal * 0.01)
 
+  const handleCheckoutButton = ()=> {
+    setBuyNowProduct(null)
+    router.push("/checkout")
+  }
+
   return (
     <div className="mt-3 lg:mt-12 px-3 lg:px-6 flex flex-col lg:flex-row gap-1 lg:gap-8">
       <main className="basis-[70%]">
         <h2 className="text-2xl lg:text-3xl font-semibold">Tu carrito</h2>
-        <p className={`${cart.length != 0 ? "hidden" : "text-xl font-medium"}`}>Tu carrito está vacío. <a href="/productos" className="cursor-pointer text-[#508f82]">¡Explorá nuestros productos haciendo click aquí!</a></p>
+        <p className={`${cart.length != 0 ? "hidden" : "text-lg lg:text-xl font-medium"}`}>Todavía no has seleccionado nada. <b onClick={()=> router.push("/productos")} className="cursor-pointer font-medium text-[#508f82]">¡Explorá nuestros productos haciendo click aquí!</b></p>
         <div className="lg:pt-3">
           {cart.map(product => {
             return (
@@ -82,7 +87,7 @@ const CartPage = ()=> {
             <p className="font-semibold text-lg lg:text-xl">Total</p>
             <p className="font-semibold text-lg lg:text-xl">{`$ ${numberFormat(taxes + subtotal)}`}</p>
           </div>
-          <button onClick={()=> router.push("/checkout")} className="py-2 lg:py-3 text-sm lg:text-base w-full rounded-xl bg-[#508f82] text-white mt-1 lg:mt-3 cursor-pointer hover:scale-[99%] transition-all">Continuar con el pago</button>
+          <button onClick={handleCheckoutButton} className="py-2 lg:py-3 text-sm lg:text-base w-full rounded-xl bg-[#508f82] text-white mt-1 lg:mt-3 cursor-pointer hover:scale-[99%] transition-all">Continuar con el pago</button>
         </section>
       </aside>
     </div>
