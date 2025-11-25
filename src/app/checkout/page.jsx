@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 import { useContext } from 'react';
 import { CartContext } from '../providers/CartProvider';
 import { numberFormat } from '../utils/utils';
-import { CirclePlus, CircleMinus, Trash2 } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 
 // Define el esquema de validación
@@ -81,6 +81,25 @@ const CheckoutPage = ()=> {
   ? [buyNowProduct]     // si existe buyNowProduct = checkout rápido
   : cart;               // si no existe = checkout normal
 
+  let subtotal
+  if (!buyNowProduct) {
+    subtotal = cart.reduce((acc, product) => {
+    if (product.precioFinal) {
+        return acc + (product.precioFinal * product.quantity)
+      } else {
+        return acc + (product.precio * product.quantity)
+      }
+    }, 0)
+  } else {
+    if (buyNowProduct.precioFinal) {
+      subtotal = buyNowProduct.precioFinal * buyNowProduct.quantity
+    } else {
+      subtotal = buyNowProduct.precio * buyNowProduct.quantity
+    }
+  }
+
+  const taxes = Math.round(subtotal * 0.01)
+
   const onSubmit = (data) => {
     if (data.cardNumber.slice(-1) == 0 && data.paymentMethod == "credit-debit-card") {
       router.push("/checkout/error")
@@ -114,12 +133,17 @@ const CheckoutPage = ()=> {
                   <p className='font-semibold text-xs lg:text-base'>x{product.quantity}</p>
                 </div>
               </section>
-              <section className="flex flex-col-reverse md:flex-row items-end md:items-center md:gap-4 lg:gap-6 mx-3 lg:mx-6">
+              <section className="flex flex-col-reverse md:flex-row items-end md:items-center md:gap-4 lg:gap-6 mx-3">
                 <p className="text-base lg:text-xl font-medium w-[110px] lg:w-[130px] text-end">{`$ ${numberFormat(product.precioFinal ? product.precioFinal * product.quantity : product.precio * product.quantity)}`}</p>
               </section>
             </article>
           )
         })}
+      </div>
+      <div className='flex items-center justify-end gap-2 lg:mx-3'>
+        <p className='text-sm lg:text-lg font-medium'>Total de compra + impuestos + <b className='text-[#508f82]'>envío gratis</b></p>
+        <ArrowRight />
+        <p className='font-semibold text-base lg:text-xl whitespace-nowrap'>$ {numberFormat(subtotal + taxes)}</p>
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="mb-6 gap-3 lg:gap-6 grid grid-cols-2 text-sm lg:text-base">
