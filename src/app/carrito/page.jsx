@@ -27,7 +27,7 @@ const CartPage = ()=> {
   }
 
   return (
-    <div className="mt-3 lg:mt-12 px-3 lg:px-6 flex flex-col lg:flex-row gap-1 lg:gap-8">
+    <div className="pt-1 lg:pt-6 px-3 lg:px-6 flex flex-col lg:flex-row gap-1 lg:gap-8">
       <main className="basis-[70%]">
         <h2 className="text-2xl lg:text-3xl font-semibold">Tu carrito</h2>
         <p className={`${cart.length != 0 ? "hidden" : "text-lg lg:text-xl font-medium"}`}>Todavía no has seleccionado nada. <b onClick={()=> router.push("/productos")} className="cursor-pointer font-medium text-[#508f82]">¡Explorá nuestros productos haciendo click aquí!</b></p>
