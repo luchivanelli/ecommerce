@@ -40,7 +40,9 @@ export default function ClientLayout({ children }) {
   return (
     <CartProvider>
       <Header />
-      {children}
+      <div className="mt-[84px] lg:mt-[70px]">
+        {children}
+      </div>
     </CartProvider>
   );
 }

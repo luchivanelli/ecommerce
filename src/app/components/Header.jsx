@@ -18,7 +18,7 @@ const Header = () => {
   }
 
   return (
-    <header className="min-h-[70px] p-2 flex flex-col gap-2 items-center w-full px-3 lg:px-6 text-lg">
+    <header className="min-h-[70px] -mt-[84px] lg:-mt-[70px] fixed z-50 bg-white p-2 flex flex-col gap-2 items-center w-full px-3 lg:px-6 text-lg">
       {/* header desktop */}
       <div className="flex justify-between w-full">
         <div className="flex gap-16 items-center w-full">
